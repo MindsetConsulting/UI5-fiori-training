@@ -8,8 +8,11 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("project1.controller.View1", {
-            onInit: function () {
-
+            onShowHello : function (){
+                alert("Hello World");
             }
+            // onInit: function () {
+
+            // }
         });
     });
