@@ -10,13 +10,7 @@ sap.ui.define([
 
         return UIComponent.extend("project1.Component", {
             metadata: {
-                "interfaces": ["sap.ui.core.IAsyncContentCreation"],
-                "rootView": {
-                    "viewName": "project1.controller.View1",
-                    "type": "XML",
-                    /*"async": true, // implicitly set via the sap.ui.core.IAsyncContentCreation interface*/
-                    "id": "app"
-                }
+                manifest: "json"
             },
 
             init: function () {
