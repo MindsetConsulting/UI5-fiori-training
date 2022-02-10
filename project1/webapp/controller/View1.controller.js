@@ -8,7 +8,7 @@ sap.ui.define([
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, MessageToast, JSONModel, ResourceModel) {
+    function (Controller, MessageToast, JSONModel, ResourceModel ) {
         "use strict";
 
         return Controller.extend("project1.controller.View1", {
@@ -20,8 +20,8 @@ sap.ui.define([
                 };
                 var oModel = new JSONModel(oData);
                 this.getView().setModel(oModel);
-                // set i18n model on view
-                var i18nModel = new ResourceModel({
+                 // set i18n model on view
+                 var i18nModel = new ResourceModel({
                     bundleName: "project1.i18n.i18n"
                 });
                 this.getView().setModel(i18nModel, "i18n");
@@ -33,6 +33,7 @@ sap.ui.define([
                 var sMsg = oBundle.getText("helloMsg", [sRecipient]);
                 // show message
                 MessageToast.show(sMsg);
-            }
+            },
+           
         });
     });
