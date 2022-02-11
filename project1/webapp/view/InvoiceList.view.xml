@@ -4,8 +4,7 @@
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
    <List
-         id="invoiceList"
-
+      id="invoiceList"
       headerText="{i18n>invoiceListTitle}"
       class="sapUiResponsiveMargin"
       width="auto"
@@ -30,7 +29,8 @@
 			parts: [{path: 'invoice>ExtendedPrice'}, {path: 'view>/currency'}],
 			type: 'sap.ui.model.type.Currency',
 			formatOptions: {
-				showMeasure: false
+				showMeasure: false,
+                style: 'short'
 			}
 		}"
 		numberUnit="{view>/currency}"
