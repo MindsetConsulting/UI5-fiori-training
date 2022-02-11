@@ -5,16 +5,6 @@
     xmlns="sap.m"
 >
     <Shell id="shell">
-        <App id="app" class="myAppDemoWT">
-            <pages>
-                <Page id="page" title="{i18n>title}">                  
-                     <content> 
-						<mvc:XMLView viewName="project1.view.HelloPanel"/>    
-                        <mvc:XMLView viewName="project1.view.InvoiceList"/>
-                 
-                    </content>               
-                </Page>
-            </pages>
-        </App>
+        <App id="app" class="myAppDemoWT"/>
     </Shell>
 </mvc:View>

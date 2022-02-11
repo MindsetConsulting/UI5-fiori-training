@@ -54,6 +54,7 @@
           "bundleName": "project1.i18n.i18n"
         }
       },
+      
       "invoice": {
         "dataSource": "invoiceRemote"
       }
@@ -77,20 +78,34 @@
       },
       "routes": [
         {
-          "name": "RouteView1",
-          "pattern": "RouteView1",
+          "name": "overview",
+          "pattern": "",
           "target": [
-            "TargetView1"
+            "overview"
+          ]
+        },
+        {
+          "name": "detail",
+          "pattern": "detail",
+          "target": [
+            "detail"
           ]
         }
       ],
       "targets": {
-        "TargetView1": {
+        "overview": {
           "viewType": "XML",
           "transition": "slide",
           "clearControlAggregation": false,
-          "viewId": "View1",
-          "viewName": "View1"
+          "viewId": "overview",
+          "viewName": "Overview"
+        },
+        "detail": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "detail",
+          "viewName": "Detail"
         }
       }
     },

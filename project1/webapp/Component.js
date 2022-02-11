@@ -31,7 +31,8 @@ sap.ui.define([
                 });
                 this.setModel(i18nModel, "i18n");
 
-                // enable routing
+                // enable routing 
+			    // create the views based on the url/hash
                 this.getRouter().initialize();
 
                 // set the device model
